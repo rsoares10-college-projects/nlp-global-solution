@@ -63,86 +63,20 @@ df = pd.read_csv('./data/amazon_sentiment_analysis.csv') # Load Amazon product r
 Here we get a glimpse of data ir organized on the dataset. We got two columns, one with raw text, reviews, adn another with the labels, sentiment. Also there are only two labels to work with: bad or good.
 
 ```python
-df.head(10)
+print(df.head(10))
 ```
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>review</th>
-      <th>sentiment</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Expensive Junk: This product consists of a pie...</td>
-      <td>bad</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Toast too dark: Even on the lowest setting, th...</td>
-      <td>bad</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Excellent imagery...dumbed down story: I enjoy...</td>
-      <td>good</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Are we pretending everyone is married?: The au...</td>
-      <td>bad</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Not worth your time: Might as well just use a ...</td>
-      <td>bad</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Book reads like written for grade schoolers: I...</td>
-      <td>bad</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Jeanne de Florette &amp; Manon of the Springs: I s...</td>
-      <td>bad</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Theater Projector Ceiling Mount: Would not fit...</td>
-      <td>bad</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>This import is sooooooooooo good: This is a gr...</td>
-      <td>good</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Garbage: The handle broke clean off after TWO ...</td>
-      <td>bad</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+                                                  review sentiment
+    0  Expensive Junk: This product consists of a pie...       bad
+    1  Toast too dark: Even on the lowest setting, th...       bad
+    2  Excellent imagery...dumbed down story: I enjoy...      good
+    3  Are we pretending everyone is married?: The au...       bad
+    4  Not worth your time: Might as well just use a ...       bad
+    5  Book reads like written for grade schoolers: I...       bad
+    6  Jeanne de Florette & Manon of the Springs: I s...       bad
+    7  Theater Projector Ceiling Mount: Would not fit...       bad
+    8  This import is sooooooooooo good: This is a gr...      good
+    9  Garbage: The handle broke clean off after TWO ...       bad
 
 Here we we can see a bit more detailed information about the dataset. We got 559500 entries, which is a pretty nice size to work with and we got no missing values.
 
